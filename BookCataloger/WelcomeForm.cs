@@ -15,10 +15,14 @@ namespace BookCataloger
 {
     public partial class Greeting : Form
     {
+        private static List<Book> listOfBooks = new List<Book>();
+        internal static List<Book> ListOfBooks { get => listOfBooks; set => listOfBooks = value; }
+
         public Greeting()
         {
             InitializeComponent();
         }
+
 
         private void butAdd_Click(object sender, EventArgs e)
         {
@@ -41,14 +45,14 @@ namespace BookCataloger
 
         private void Greeting_Load(object sender, EventArgs e)
         {
-            List<Book> listOfBooks = new List<Book>();
+            listOfBooks.Clear();
             string str;
             using (StreamReader reader = new StreamReader("Books.txt"))
             {
                 while ((str = reader.ReadLine()) != null)
                 {
                     string[] words = LineBreaker.ReturnWordArr('|', str, 0);
-                    listOfBooks.Add(new Book(words[0], words[1], words[2], words[3], words[4], words[5]));
+                    ListOfBooks.Add(new Book(words[0], words[1], words[2], words[3], words[4], words[5]));
                 }
             }
 

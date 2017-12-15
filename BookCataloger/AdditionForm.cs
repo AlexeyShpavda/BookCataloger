@@ -25,7 +25,7 @@ namespace BookCataloger
             {
                 File.AppendAllText("Books.txt", textBox1.Text + "|" + textBox2.Text + "|" + textBox3.Text + "|" + textBox4.Text
                     + "|" + textBox5.Text + "|" + comboBox1.Text + "\r\n");
-                MessageBox.Show("Информация", "Сохранение!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Сохранение!", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Hide();
                 Greeting greeting = new Greeting();
                 greeting.Show();

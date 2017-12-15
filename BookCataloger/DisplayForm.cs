@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using BookCataloger.Breakers;
+using BookCataloger.Model;
 
 namespace BookCataloger
 {
@@ -33,22 +34,18 @@ namespace BookCataloger
 
         private void DisplayForm_Load(object sender, EventArgs e)
         {
-            string str;
             ListViewItem list;
-            using (StreamReader reader = new StreamReader("Books.txt"))
+            listView1.Items.Clear();
+            foreach (var item in Greeting.ListOfBooks)
             {
-                while ((str = reader.ReadLine()) != null)
-                {
-                    string[] words = LineBreaker.ReturnWordArr('|', str, 0);
-                    list= new ListViewItem(words[0]);
-                    list.SubItems.Add(words[1]);
-                    list.SubItems.Add(words[2]);
-                    list.SubItems.Add(words[3]);
-                    list.SubItems.Add(words[4]);
-                    list.SubItems.Add(words[5]);
-                    listView1.Items.Add(list);
-                    //Book.Add(new Candy(words[0], words[1], words[2], words[3], words[4], words[5]));
-                }
+            list= new ListViewItem(item.Author);
+            list.SubItems.Add(item.Name);
+            list.SubItems.Add(item.Year);
+            list.SubItems.Add(item.PublishingHouse);
+            list.SubItems.Add(item.Annotation);
+            list.SubItems.Add(item.Category);
+            listView1.Items.Add(list);
+
             }
         }
     }

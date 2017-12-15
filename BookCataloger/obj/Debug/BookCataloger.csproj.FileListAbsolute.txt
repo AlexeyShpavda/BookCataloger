@@ -1,0 +1,11 @@
+E:\Programs\C#\BookCataloger\BookCataloger\bin\Debug\BookCataloger.exe.config
+E:\Programs\C#\BookCataloger\BookCataloger\bin\Debug\BookCataloger.exe
+E:\Programs\C#\BookCataloger\BookCataloger\bin\Debug\BookCataloger.pdb
+E:\Programs\C#\BookCataloger\BookCataloger\obj\Debug\BookCataloger.csprojResolveAssemblyReference.cache
+E:\Programs\C#\BookCataloger\BookCataloger\obj\Debug\BookCataloger.Properties.Resources.resources
+E:\Programs\C#\BookCataloger\BookCataloger\obj\Debug\BookCataloger.csproj.GenerateResource.Cache
+E:\Programs\C#\BookCataloger\BookCataloger\obj\Debug\BookCataloger.csproj.CoreCompileInputs.cache
+E:\Programs\C#\BookCataloger\BookCataloger\obj\Debug\BookCataloger.exe
+E:\Programs\C#\BookCataloger\BookCataloger\obj\Debug\BookCataloger.pdb
+E:\Programs\C#\BookCataloger\BookCataloger\obj\Debug\BookCataloger.Greeting.resources
+E:\Programs\C#\BookCataloger\BookCataloger\obj\Debug\BookCataloger.AdditionForm.resources

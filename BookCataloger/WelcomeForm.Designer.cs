@@ -56,6 +56,7 @@
             this.butAdd.TabIndex = 1;
             this.butAdd.Text = "Добавить";
             this.butAdd.UseVisualStyleBackColor = true;
+            this.butAdd.Click += new System.EventHandler(this.butAdd_Click);
             // 
             // butView
             // 
@@ -105,6 +106,7 @@
             this.butExit.TabIndex = 6;
             this.butExit.Text = "Выход";
             this.butExit.UseVisualStyleBackColor = true;
+            this.butExit.Click += new System.EventHandler(this.butExit_Click);
             // 
             // Greeting
             // 
@@ -119,7 +121,7 @@
             this.Controls.Add(this.lbWelcome);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Greeting";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Каталогизатор книг";
             this.pnView.ResumeLayout(false);
             this.ResumeLayout(false);

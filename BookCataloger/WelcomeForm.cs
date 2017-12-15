@@ -16,5 +16,18 @@ namespace BookCataloger
         {
             InitializeComponent();
         }
+
+        private void butAdd_Click(object sender, EventArgs e)
+        {
+            Hide();
+            AdditionForm additionForm = new AdditionForm();
+            additionForm.Show();
+        }
+
+        private void butExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
     }
 }

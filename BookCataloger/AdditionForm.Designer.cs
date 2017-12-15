@@ -43,6 +43,7 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.butAdd = new System.Windows.Forms.Button();
             this.butBack = new System.Windows.Forms.Button();
+            this.butExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbAdditionForm
@@ -166,21 +167,34 @@
             // 
             // butAdd
             // 
-            this.butAdd.Location = new System.Drawing.Point(49, 234);
+            this.butAdd.Location = new System.Drawing.Point(17, 234);
             this.butAdd.Name = "butAdd";
             this.butAdd.Size = new System.Drawing.Size(125, 40);
             this.butAdd.TabIndex = 13;
             this.butAdd.Text = "Добавить";
             this.butAdd.UseVisualStyleBackColor = true;
+            this.butAdd.Click += new System.EventHandler(this.butAdd_Click);
             // 
             // butBack
             // 
-            this.butBack.Location = new System.Drawing.Point(299, 234);
+            this.butBack.Location = new System.Drawing.Point(175, 234);
             this.butBack.Name = "butBack";
             this.butBack.Size = new System.Drawing.Size(125, 40);
             this.butBack.TabIndex = 14;
             this.butBack.Text = "Вернуться";
             this.butBack.UseVisualStyleBackColor = true;
+            this.butBack.Click += new System.EventHandler(this.butBack_Click);
+            // 
+            // butExit
+            // 
+            this.butExit.Location = new System.Drawing.Point(338, 234);
+            this.butExit.Name = "butExit";
+            this.butExit.Size = new System.Drawing.Size(125, 40);
+            this.butExit.TabIndex = 15;
+            this.butExit.Text = "Выход";
+            this.butExit.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.butExit.UseVisualStyleBackColor = true;
+            this.butExit.Click += new System.EventHandler(this.butExit_Click);
             // 
             // AdditionForm
             // 
@@ -188,6 +202,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(484, 295);
+            this.Controls.Add(this.butExit);
             this.Controls.Add(this.butBack);
             this.Controls.Add(this.butAdd);
             this.Controls.Add(this.textBox5);
@@ -203,8 +218,9 @@
             this.Controls.Add(this.lbName);
             this.Controls.Add(this.lbAuthor);
             this.Controls.Add(this.lbAdditionForm);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdditionForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdditionForm";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -228,5 +244,6 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button butAdd;
         private System.Windows.Forms.Button butBack;
+        private System.Windows.Forms.Button butExit;
     }
 }

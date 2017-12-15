@@ -124,6 +124,7 @@
             this.Name = "Greeting";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Каталогизатор книг";
+            this.Load += new System.EventHandler(this.Greeting_Load);
             this.pnView.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

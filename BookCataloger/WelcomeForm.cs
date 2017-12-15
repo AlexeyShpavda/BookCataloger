@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BookCataloger.Model;
+using System.IO;
+using BookCataloger.Breakers;
 
 namespace BookCataloger
 {
@@ -34,6 +37,21 @@ namespace BookCataloger
             Hide();
             DisplayForm displayForm = new DisplayForm();
             displayForm.Show();
+        }
+
+        private void Greeting_Load(object sender, EventArgs e)
+        {
+            List<Book> listOfBooks = new List<Book>();
+            string str;
+            using (StreamReader reader = new StreamReader("Books.txt"))
+            {
+                while ((str = reader.ReadLine()) != null)
+                {
+                    string[] words = LineBreaker.ReturnWordArr('|', str, 0);
+                    listOfBooks.Add(new Book(words[0], words[1], words[2], words[3], words[4], words[5]));
+                }
+            }
+
         }
     }
 }

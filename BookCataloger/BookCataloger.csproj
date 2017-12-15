@@ -51,12 +51,14 @@
     <Compile Include="AdditionForm.Designer.cs">
       <DependentUpon>AdditionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Breakers\LineBreaker.cs" />
     <Compile Include="DisplayForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DisplayForm.Designer.cs">
       <DependentUpon>DisplayForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Book.cs" />
     <Compile Include="WelcomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,5 +98,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

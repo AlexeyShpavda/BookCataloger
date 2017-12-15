@@ -31,7 +31,6 @@
             this.lbWelcome = new System.Windows.Forms.Label();
             this.butAdd = new System.Windows.Forms.Button();
             this.butView = new System.Windows.Forms.Button();
-            this.butDelete = new System.Windows.Forms.Button();
             this.butSearch = new System.Windows.Forms.Button();
             this.pnView = new System.Windows.Forms.Panel();
             this.butExit = new System.Windows.Forms.Button();
@@ -60,26 +59,17 @@
             // 
             // butView
             // 
-            this.butView.Location = new System.Drawing.Point(151, 81);
+            this.butView.Location = new System.Drawing.Point(151, 91);
             this.butView.Name = "butView";
             this.butView.Size = new System.Drawing.Size(174, 56);
             this.butView.TabIndex = 2;
-            this.butView.Text = "Просмотр";
+            this.butView.Text = "Просмотр/ Удаление";
             this.butView.UseVisualStyleBackColor = true;
             this.butView.Click += new System.EventHandler(this.butView_Click);
             // 
-            // butDelete
-            // 
-            this.butDelete.Location = new System.Drawing.Point(151, 143);
-            this.butDelete.Name = "butDelete";
-            this.butDelete.Size = new System.Drawing.Size(174, 56);
-            this.butDelete.TabIndex = 3;
-            this.butDelete.Text = "Удалить";
-            this.butDelete.UseVisualStyleBackColor = true;
-            // 
             // butSearch
             // 
-            this.butSearch.Location = new System.Drawing.Point(151, 205);
+            this.butSearch.Location = new System.Drawing.Point(151, 163);
             this.butSearch.Name = "butSearch";
             this.butSearch.Size = new System.Drawing.Size(174, 56);
             this.butSearch.TabIndex = 4;
@@ -90,8 +80,8 @@
             // 
             this.pnView.BackColor = System.Drawing.Color.LightSlateGray;
             this.pnView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnView.Controls.Add(this.butExit);
             this.pnView.Controls.Add(this.butSearch);
-            this.pnView.Controls.Add(this.butDelete);
             this.pnView.Controls.Add(this.butView);
             this.pnView.Controls.Add(this.butAdd);
             this.pnView.Location = new System.Drawing.Point(3, 59);
@@ -101,7 +91,7 @@
             // 
             // butExit
             // 
-            this.butExit.Location = new System.Drawing.Point(391, 323);
+            this.butExit.Location = new System.Drawing.Point(390, 262);
             this.butExit.Name = "butExit";
             this.butExit.Size = new System.Drawing.Size(77, 22);
             this.butExit.TabIndex = 6;
@@ -117,7 +107,6 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(480, 357);
-            this.Controls.Add(this.butExit);
             this.Controls.Add(this.pnView);
             this.Controls.Add(this.lbWelcome);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -136,7 +125,6 @@
         private System.Windows.Forms.Label lbWelcome;
         private System.Windows.Forms.Button butAdd;
         private System.Windows.Forms.Button butView;
-        private System.Windows.Forms.Button butDelete;
         private System.Windows.Forms.Button butSearch;
         private System.Windows.Forms.Panel pnView;
         private System.Windows.Forms.Button butExit;

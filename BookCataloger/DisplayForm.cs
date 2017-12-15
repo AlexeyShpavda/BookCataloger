@@ -34,19 +34,27 @@ namespace BookCataloger
 
         private void DisplayForm_Load(object sender, EventArgs e)
         {
+            textBox1.Text = "Введите ID книги для удаления";
+            short i = 0;
             ListViewItem list;
             listView1.Items.Clear();
             foreach (var item in Greeting.ListOfBooks)
             {
-            list= new ListViewItem(item.Author);
+            list= new ListViewItem(Convert.ToString(i));
+            list.SubItems.Add(item.Author);
             list.SubItems.Add(item.Name);
             list.SubItems.Add(item.Year);
             list.SubItems.Add(item.PublishingHouse);
             list.SubItems.Add(item.Annotation);
             list.SubItems.Add(item.Category);
             listView1.Items.Add(list);
-
+            i++;
             }
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -37,6 +37,9 @@
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.butExit = new System.Windows.Forms.Button();
             this.butBack = new System.Windows.Forms.Button();
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // listView1
@@ -48,7 +51,8 @@
             this.columnHeader3,
             this.columnHeader4,
             this.columnHeader5,
-            this.columnHeader6});
+            this.columnHeader6,
+            this.columnHeader7});
             this.listView1.GridLines = true;
             this.listView1.Location = new System.Drawing.Point(12, 12);
             this.listView1.Name = "listView1";
@@ -56,40 +60,42 @@
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Автор";
+            this.columnHeader1.Text = "id";
+            this.columnHeader1.Width = 22;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Название";
+            this.columnHeader2.Text = "Автор";
             this.columnHeader2.Width = 65;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Год издания";
+            this.columnHeader3.Text = "Название";
             this.columnHeader3.Width = 93;
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Издательство";
+            this.columnHeader4.Text = "Год";
             // 
             // columnHeader5
             // 
-            this.columnHeader5.Text = "Аннотация";
+            this.columnHeader5.Text = "Издательство";
             this.columnHeader5.Width = 73;
             // 
             // columnHeader6
             // 
-            this.columnHeader6.Text = "Категория";
-            this.columnHeader6.Width = 119;
+            this.columnHeader6.Text = "Аннотации";
+            this.columnHeader6.Width = 64;
             // 
             // butExit
             // 
-            this.butExit.Location = new System.Drawing.Point(351, 365);
+            this.butExit.Location = new System.Drawing.Point(403, 365);
             this.butExit.Name = "butExit";
-            this.butExit.Size = new System.Drawing.Size(125, 25);
+            this.butExit.Size = new System.Drawing.Size(85, 25);
             this.butExit.TabIndex = 1;
             this.butExit.Text = "Выход";
             this.butExit.UseVisualStyleBackColor = true;
@@ -97,13 +103,34 @@
             // 
             // butBack
             // 
-            this.butBack.Location = new System.Drawing.Point(200, 365);
+            this.butBack.Location = new System.Drawing.Point(313, 365);
             this.butBack.Name = "butBack";
-            this.butBack.Size = new System.Drawing.Size(125, 25);
+            this.butBack.Size = new System.Drawing.Size(84, 25);
             this.butBack.TabIndex = 2;
             this.butBack.Text = "Вернуться";
             this.butBack.UseVisualStyleBackColor = true;
             this.butBack.Click += new System.EventHandler(this.butBack_Click);
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Категория";
+            this.columnHeader7.Width = 70;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(223, 365);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(84, 25);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Удалить";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(12, 368);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(205, 20);
+            this.textBox1.TabIndex = 4;
             // 
             // DisplayForm
             // 
@@ -111,6 +138,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(500, 400);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.butBack);
             this.Controls.Add(this.butExit);
             this.Controls.Add(this.listView1);
@@ -120,6 +149,7 @@
             this.Text = "DisplayForm";
             this.Load += new System.EventHandler(this.DisplayForm_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -134,5 +164,8 @@
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

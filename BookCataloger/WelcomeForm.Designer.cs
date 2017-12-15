@@ -66,6 +66,7 @@
             this.butView.TabIndex = 2;
             this.butView.Text = "Просмотр";
             this.butView.UseVisualStyleBackColor = true;
+            this.butView.Click += new System.EventHandler(this.butView_Click);
             // 
             // butDelete
             // 

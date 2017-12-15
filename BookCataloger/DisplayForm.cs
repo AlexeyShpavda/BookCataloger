@@ -7,21 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace BookCataloger
 {
-    public partial class Greeting : Form
+    public partial class DisplayForm : Form
     {
-        public Greeting()
+        public DisplayForm()
         {
             InitializeComponent();
         }
 
-        private void butAdd_Click(object sender, EventArgs e)
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Hide();
-            AdditionForm additionForm = new AdditionForm();
-            additionForm.Show();
+            ListViewItem list = new ListViewItem();
         }
 
         private void butExit_Click(object sender, EventArgs e)
@@ -29,11 +28,11 @@ namespace BookCataloger
             Application.Exit();
         }
 
-        private void butView_Click(object sender, EventArgs e)
+        private void butBack_Click(object sender, EventArgs e)
         {
             Hide();
-            DisplayForm displayForm = new DisplayForm();
-            displayForm.Show();
+            Greeting greeting = new Greeting();
+            greeting.Show();
         }
     }
 }

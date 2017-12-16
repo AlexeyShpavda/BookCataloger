@@ -52,17 +52,17 @@ namespace BookCataloger
                 while ((str = reader.ReadLine()) != null)
                 {
                     string[] words = LineBreaker.ReturnWordArr('|', str, 0);
-                    /*if((str = reader.ReadLine())!=""&& (str = reader.ReadLine()) != null) */ListOfBooks.Add(new Book(words[0], words[1], words[2], words[3], words[4], words[5]));
-                    //else
-                    //{
-                    //    Hide();
-                    //    AdditionForm additionForm = new AdditionForm();
-                    //    additionForm.Show();
-                    //}
+                    ListOfBooks.Add(new Book(words[0], words[1], words[2], words[3], words[4], words[5]));
                 }
             }
 
         }
 
+        private void butSearch_Click(object sender, EventArgs e)
+        {
+            Hide();
+            SearchForm search = new SearchForm();
+            search.Show();
+        }
     }
 }

@@ -11,3 +11,4 @@ E:\Programs\C#\BookCataloger\BookCataloger\obj\Debug\BookCataloger.Greeting.reso
 E:\Programs\C#\BookCataloger\BookCataloger\obj\Debug\BookCataloger.AdditionForm.resources
 E:\Programs\C#\BookCataloger\BookCataloger\obj\Debug\BookCataloger.DisplayForm.resources
 E:\Programs\C#\BookCataloger\BookCataloger\obj\Debug\BookCataloger.EditingForm.resources
+E:\Programs\C#\BookCataloger\BookCataloger\obj\Debug\BookCataloger.SearchForm.resources

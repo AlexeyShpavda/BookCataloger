@@ -52,7 +52,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.ForeColor = System.Drawing.Color.DarkGray;
-            this.button1.Location = new System.Drawing.Point(389, 358);
+            this.button1.Location = new System.Drawing.Point(389, 337);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 30);
             this.button1.TabIndex = 0;
@@ -64,7 +64,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Black;
             this.button2.ForeColor = System.Drawing.Color.DarkGray;
-            this.button2.Location = new System.Drawing.Point(284, 358);
+            this.button2.Location = new System.Drawing.Point(284, 337);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(99, 30);
             this.button2.TabIndex = 1;
@@ -76,7 +76,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.Black;
             this.button3.ForeColor = System.Drawing.Color.DarkGray;
-            this.button3.Location = new System.Drawing.Point(21, 358);
+            this.button3.Location = new System.Drawing.Point(21, 337);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(99, 30);
             this.button3.TabIndex = 2;
@@ -217,7 +217,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(500, 400);
+            this.ClientSize = new System.Drawing.Size(500, 374);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);

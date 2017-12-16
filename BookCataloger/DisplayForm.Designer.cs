@@ -99,32 +99,38 @@
             // 
             // butExit
             // 
+            this.butExit.BackColor = System.Drawing.Color.Black;
+            this.butExit.ForeColor = System.Drawing.Color.DarkGray;
             this.butExit.Location = new System.Drawing.Point(375, 387);
             this.butExit.Name = "butExit";
             this.butExit.Size = new System.Drawing.Size(113, 25);
             this.butExit.TabIndex = 1;
             this.butExit.Text = "Выход";
-            this.butExit.UseVisualStyleBackColor = true;
+            this.butExit.UseVisualStyleBackColor = false;
             this.butExit.Click += new System.EventHandler(this.butExit_Click);
             // 
             // butBack
             // 
+            this.butBack.BackColor = System.Drawing.Color.Black;
+            this.butBack.ForeColor = System.Drawing.Color.DarkGray;
             this.butBack.Location = new System.Drawing.Point(375, 361);
             this.butBack.Name = "butBack";
             this.butBack.Size = new System.Drawing.Size(112, 25);
             this.butBack.TabIndex = 2;
             this.butBack.Text = "Вернуться";
-            this.butBack.UseVisualStyleBackColor = true;
+            this.butBack.UseVisualStyleBackColor = false;
             this.butBack.Click += new System.EventHandler(this.butBack_Click);
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.ForeColor = System.Drawing.Color.DarkGray;
             this.button1.Location = new System.Drawing.Point(265, 389);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(104, 23);
             this.button1.TabIndex = 3;
             this.button1.Text = "Удалить";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
@@ -137,6 +143,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(9, 358);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(244, 13);
@@ -145,19 +152,21 @@
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Black;
+            this.button2.ForeColor = System.Drawing.Color.DarkGray;
             this.button2.Location = new System.Drawing.Point(265, 361);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(104, 25);
             this.button2.TabIndex = 6;
             this.button2.Text = "Редактировать";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // DisplayForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SteelBlue;
+            this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(500, 424);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);

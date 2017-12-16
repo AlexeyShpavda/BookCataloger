@@ -40,7 +40,9 @@
             // lbWelcome
             // 
             this.lbWelcome.AutoSize = true;
+            this.lbWelcome.BackColor = System.Drawing.Color.Black;
             this.lbWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbWelcome.ForeColor = System.Drawing.Color.Silver;
             this.lbWelcome.Location = new System.Drawing.Point(12, 19);
             this.lbWelcome.Name = "lbWelcome";
             this.lbWelcome.Size = new System.Drawing.Size(450, 24);
@@ -49,36 +51,43 @@
             // 
             // butAdd
             // 
-            this.butAdd.Location = new System.Drawing.Point(125, 18);
+            this.butAdd.BackColor = System.Drawing.Color.Black;
+            this.butAdd.ForeColor = System.Drawing.Color.Silver;
+            this.butAdd.Location = new System.Drawing.Point(125, 26);
             this.butAdd.Name = "butAdd";
             this.butAdd.Size = new System.Drawing.Size(224, 56);
             this.butAdd.TabIndex = 1;
             this.butAdd.Text = "Добавить";
-            this.butAdd.UseVisualStyleBackColor = true;
+            this.butAdd.UseVisualStyleBackColor = false;
             this.butAdd.Click += new System.EventHandler(this.butAdd_Click);
             // 
             // butView
             // 
-            this.butView.Location = new System.Drawing.Point(125, 92);
+            this.butView.BackColor = System.Drawing.Color.Black;
+            this.butView.ForeColor = System.Drawing.Color.Silver;
+            this.butView.Location = new System.Drawing.Point(125, 99);
             this.butView.Name = "butView";
             this.butView.Size = new System.Drawing.Size(224, 56);
             this.butView.TabIndex = 2;
             this.butView.Text = "Просмотр/ Удаление/Редактирование";
-            this.butView.UseVisualStyleBackColor = true;
+            this.butView.UseVisualStyleBackColor = false;
             this.butView.Click += new System.EventHandler(this.butView_Click);
             // 
             // butSearch
             // 
-            this.butSearch.Location = new System.Drawing.Point(125, 163);
+            this.butSearch.BackColor = System.Drawing.Color.Black;
+            this.butSearch.ForeColor = System.Drawing.Color.Silver;
+            this.butSearch.Location = new System.Drawing.Point(125, 170);
             this.butSearch.Name = "butSearch";
             this.butSearch.Size = new System.Drawing.Size(224, 56);
             this.butSearch.TabIndex = 4;
             this.butSearch.Text = "Поиск";
-            this.butSearch.UseVisualStyleBackColor = true;
+            this.butSearch.UseVisualStyleBackColor = false;
+            this.butSearch.Click += new System.EventHandler(this.butSearch_Click);
             // 
             // pnView
             // 
-            this.pnView.BackColor = System.Drawing.Color.LightSlateGray;
+            this.pnView.BackColor = System.Drawing.Color.DarkGray;
             this.pnView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnView.Controls.Add(this.butExit);
             this.pnView.Controls.Add(this.butSearch);
@@ -91,12 +100,14 @@
             // 
             // butExit
             // 
-            this.butExit.Location = new System.Drawing.Point(390, 262);
+            this.butExit.BackColor = System.Drawing.Color.Black;
+            this.butExit.ForeColor = System.Drawing.Color.Silver;
+            this.butExit.Location = new System.Drawing.Point(384, 263);
             this.butExit.Name = "butExit";
-            this.butExit.Size = new System.Drawing.Size(77, 22);
+            this.butExit.Size = new System.Drawing.Size(83, 26);
             this.butExit.TabIndex = 6;
             this.butExit.Text = "Выход";
-            this.butExit.UseVisualStyleBackColor = true;
+            this.butExit.UseVisualStyleBackColor = false;
             this.butExit.Click += new System.EventHandler(this.butExit_Click);
             // 
             // Greeting
@@ -105,7 +116,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(480, 357);
             this.Controls.Add(this.pnView);
             this.Controls.Add(this.lbWelcome);

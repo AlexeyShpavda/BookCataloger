@@ -44,14 +44,17 @@
             this.butAdd = new System.Windows.Forms.Button();
             this.butBack = new System.Windows.Forms.Button();
             this.butExit = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbAdditionForm
             // 
             this.lbAdditionForm.AutoSize = true;
-            this.lbAdditionForm.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.lbAdditionForm.BackColor = System.Drawing.Color.Black;
             this.lbAdditionForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbAdditionForm.Location = new System.Drawing.Point(12, 9);
+            this.lbAdditionForm.ForeColor = System.Drawing.Color.DarkGray;
+            this.lbAdditionForm.Location = new System.Drawing.Point(10, 15);
             this.lbAdditionForm.Name = "lbAdditionForm";
             this.lbAdditionForm.Size = new System.Drawing.Size(451, 20);
             this.lbAdditionForm.TabIndex = 0;
@@ -168,41 +171,57 @@
             // 
             // butAdd
             // 
+            this.butAdd.BackColor = System.Drawing.Color.Black;
+            this.butAdd.ForeColor = System.Drawing.Color.DarkGray;
             this.butAdd.Location = new System.Drawing.Point(17, 234);
             this.butAdd.Name = "butAdd";
             this.butAdd.Size = new System.Drawing.Size(125, 40);
             this.butAdd.TabIndex = 13;
             this.butAdd.Text = "Добавить";
-            this.butAdd.UseVisualStyleBackColor = true;
+            this.butAdd.UseVisualStyleBackColor = false;
             this.butAdd.Click += new System.EventHandler(this.butAdd_Click);
             // 
             // butBack
             // 
+            this.butBack.BackColor = System.Drawing.Color.Black;
+            this.butBack.ForeColor = System.Drawing.Color.DarkGray;
             this.butBack.Location = new System.Drawing.Point(175, 234);
             this.butBack.Name = "butBack";
             this.butBack.Size = new System.Drawing.Size(125, 40);
             this.butBack.TabIndex = 14;
             this.butBack.Text = "Вернуться";
-            this.butBack.UseVisualStyleBackColor = true;
+            this.butBack.UseVisualStyleBackColor = false;
             this.butBack.Click += new System.EventHandler(this.butBack_Click);
             // 
             // butExit
             // 
+            this.butExit.BackColor = System.Drawing.Color.Black;
+            this.butExit.ForeColor = System.Drawing.Color.DarkGray;
             this.butExit.Location = new System.Drawing.Point(338, 234);
             this.butExit.Name = "butExit";
             this.butExit.Size = new System.Drawing.Size(125, 40);
             this.butExit.TabIndex = 15;
             this.butExit.Text = "Выход";
             this.butExit.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.butExit.UseVisualStyleBackColor = true;
+            this.butExit.UseVisualStyleBackColor = false;
             this.butExit.Click += new System.EventHandler(this.butExit_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.lbAdditionForm);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(478, 49);
+            this.panel1.TabIndex = 16;
             // 
             // AdditionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(484, 295);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.butExit);
             this.Controls.Add(this.butBack);
             this.Controls.Add(this.butAdd);
@@ -218,11 +237,12 @@
             this.Controls.Add(this.lbYear);
             this.Controls.Add(this.lbName);
             this.Controls.Add(this.lbAuthor);
-            this.Controls.Add(this.lbAdditionForm);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdditionForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdditionForm";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -246,5 +266,6 @@
         private System.Windows.Forms.Button butAdd;
         private System.Windows.Forms.Button butBack;
         private System.Windows.Forms.Button butExit;
+        private System.Windows.Forms.Panel panel1;
     }
 }

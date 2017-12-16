@@ -42,15 +42,15 @@ namespace BookCataloger
             listView1.Items.Clear();
             foreach (var item in Greeting.ListOfBooks)
             {
-            list= new ListViewItem(Convert.ToString(i));
-            list.SubItems.Add(item.Author);
-            list.SubItems.Add(item.Name);
-            list.SubItems.Add(item.Year);
-            list.SubItems.Add(item.PublishingHouse);
-            list.SubItems.Add(item.Annotation);
-            list.SubItems.Add(item.Category);
-            listView1.Items.Add(list);
-            i++;
+                list= new ListViewItem(Convert.ToString(i));
+                list.SubItems.Add(item.Author);
+                list.SubItems.Add(item.Name);
+                list.SubItems.Add(item.Year);
+                list.SubItems.Add(item.PublishingHouse);
+                list.SubItems.Add(item.Annotation);
+                list.SubItems.Add(item.Category);
+                listView1.Items.Add(list);
+                i++;
             }
         }
 

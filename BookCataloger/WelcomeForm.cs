@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BookCataloger.Model;
 using System.IO;
-using BookCataloger.Breakers;
 
 namespace BookCataloger
 {
@@ -46,23 +45,14 @@ namespace BookCataloger
         private void Greeting_Load(object sender, EventArgs e)
         {
             listOfBooks.Clear();
-            string str;
-            using (StreamReader reader = new StreamReader("Books.txt"))
-            {
-                while ((str = reader.ReadLine()) != null)
-                {
-                    string[] words = LineBreaker.ReturnWordArr('|', str, 0);
-                    ListOfBooks.Add(new Book(words[0], words[1], words[2], words[3], words[4], words[5]));
-                }
-            }
-
+            Readers.Reader.ReadingFile("Books.txt");
         }
 
         private void butSearch_Click(object sender, EventArgs e)
         {
             Hide();
-            SearchForm search = new SearchForm();
-            search.Show();
+            SearchForm searchForm = new SearchForm();
+            searchForm.Show();
         }
     }
 }

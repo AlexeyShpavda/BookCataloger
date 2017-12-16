@@ -42,14 +42,10 @@ namespace BookCataloger
                 Greeting.ListOfBooks[DisplayForm._id].Annotation = textBox5.Text;
                 Greeting.ListOfBooks[DisplayForm._id].Category = comboBox1.Text;
 
-                using (StreamWriter sw = new StreamWriter("Books.txt"))
-                {
-                    foreach (var item in Greeting.ListOfBooks)
-                    {
-                        sw.WriteLine(item.ToString());
-                    }
-                }
+                Writers.Writer.WriteToFiles("Books.txt");
+
                 MessageBox.Show("Сохранение!", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 Hide();
                 Greeting greeting = new Greeting();
                 greeting.Show();

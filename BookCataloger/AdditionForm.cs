@@ -26,14 +26,11 @@ namespace BookCataloger
                 textBox4.Text != string.Empty && textBox5.Text != string.Empty && comboBox1.Text != string.Empty)
             {
                 Greeting.ListOfBooks.Add(new Book(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, comboBox1.Text));
-                using (StreamWriter sw = new StreamWriter("Books.txt"))
-                {
-                    foreach (var item in Greeting.ListOfBooks)
-                    {
-                        sw.WriteLine(item.ToString());
-                    }
-                }
+
+                Writers.Writer.WriteToFiles("Books.txt");
+
                 MessageBox.Show("Сохранение!", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 Hide();
                 Greeting greeting = new Greeting();
                 greeting.Show();

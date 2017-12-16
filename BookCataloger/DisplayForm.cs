@@ -58,13 +58,9 @@ namespace BookCataloger
         {
             _id = Convert.ToInt16(textBox1.Text);
             Greeting.ListOfBooks.RemoveAt(_id);
-            using(StreamWriter sw = new StreamWriter("Books.txt"))
-            {
-                foreach (var item in Greeting.ListOfBooks)
-                {
-                    sw.WriteLine(item.ToString());
-                }
-            }
+
+            Writers.Writer.WriteToFiles("Books.txt");
+
             MessageBox.Show("Удалено!", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Hide();
             Greeting greeting = new Greeting();

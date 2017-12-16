@@ -64,7 +64,10 @@
     <Compile Include="EditingForm.Designer.cs">
       <DependentUpon>EditingForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\IReadFiles.cs" />
+    <Compile Include="Interfaces\IWriteToFiles.cs" />
     <Compile Include="Models\Book.cs" />
+    <Compile Include="Readers\Reader.cs" />
     <Compile Include="SearchForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +82,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Writers\Writer.cs" />
     <EmbeddedResource Include="AdditionForm.resx">
       <DependentUpon>AdditionForm.cs</DependentUpon>
     </EmbeddedResource>

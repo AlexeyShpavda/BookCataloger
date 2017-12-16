@@ -41,6 +41,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listView1
@@ -98,9 +99,9 @@
             // 
             // butExit
             // 
-            this.butExit.Location = new System.Drawing.Point(403, 371);
+            this.butExit.Location = new System.Drawing.Point(375, 387);
             this.butExit.Name = "butExit";
-            this.butExit.Size = new System.Drawing.Size(85, 25);
+            this.butExit.Size = new System.Drawing.Size(113, 25);
             this.butExit.TabIndex = 1;
             this.butExit.Text = "Выход";
             this.butExit.UseVisualStyleBackColor = true;
@@ -108,9 +109,9 @@
             // 
             // butBack
             // 
-            this.butBack.Location = new System.Drawing.Point(313, 371);
+            this.butBack.Location = new System.Drawing.Point(375, 361);
             this.butBack.Name = "butBack";
-            this.butBack.Size = new System.Drawing.Size(84, 25);
+            this.butBack.Size = new System.Drawing.Size(112, 25);
             this.butBack.TabIndex = 2;
             this.butBack.Text = "Вернуться";
             this.butBack.UseVisualStyleBackColor = true;
@@ -118,9 +119,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(223, 371);
+            this.button1.Location = new System.Drawing.Point(265, 389);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 25);
+            this.button1.Size = new System.Drawing.Size(104, 23);
             this.button1.TabIndex = 3;
             this.button1.Text = "Удалить";
             this.button1.UseVisualStyleBackColor = true;
@@ -136,18 +137,29 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 358);
+            this.label1.Location = new System.Drawing.Point(9, 358);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(169, 13);
+            this.label1.Size = new System.Drawing.Size(244, 13);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Введите ID книги для удаления:";
+            this.label1.Text = "Введите ID для удаления или редактирования:";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(265, 361);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(104, 25);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Редактировать";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // DisplayForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(500, 408);
+            this.ClientSize = new System.Drawing.Size(500, 424);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
@@ -179,5 +191,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button2;
     }
 }

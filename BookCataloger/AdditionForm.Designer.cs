@@ -111,7 +111,7 @@
             // 
             this.lbCategory.AutoSize = true;
             this.lbCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbCategory.Location = new System.Drawing.Point(40, 193);
+            this.lbCategory.Location = new System.Drawing.Point(43, 193);
             this.lbCategory.Name = "lbCategory";
             this.lbCategory.Size = new System.Drawing.Size(89, 16);
             this.lbCategory.TabIndex = 6;

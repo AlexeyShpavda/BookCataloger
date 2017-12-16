@@ -49,9 +49,9 @@
             // 
             // butAdd
             // 
-            this.butAdd.Location = new System.Drawing.Point(151, 19);
+            this.butAdd.Location = new System.Drawing.Point(125, 18);
             this.butAdd.Name = "butAdd";
-            this.butAdd.Size = new System.Drawing.Size(174, 56);
+            this.butAdd.Size = new System.Drawing.Size(224, 56);
             this.butAdd.TabIndex = 1;
             this.butAdd.Text = "Добавить";
             this.butAdd.UseVisualStyleBackColor = true;
@@ -59,19 +59,19 @@
             // 
             // butView
             // 
-            this.butView.Location = new System.Drawing.Point(151, 91);
+            this.butView.Location = new System.Drawing.Point(125, 92);
             this.butView.Name = "butView";
-            this.butView.Size = new System.Drawing.Size(174, 56);
+            this.butView.Size = new System.Drawing.Size(224, 56);
             this.butView.TabIndex = 2;
-            this.butView.Text = "Просмотр/ Удаление";
+            this.butView.Text = "Просмотр/ Удаление/Редактирование";
             this.butView.UseVisualStyleBackColor = true;
             this.butView.Click += new System.EventHandler(this.butView_Click);
             // 
             // butSearch
             // 
-            this.butSearch.Location = new System.Drawing.Point(151, 163);
+            this.butSearch.Location = new System.Drawing.Point(125, 163);
             this.butSearch.Name = "butSearch";
-            this.butSearch.Size = new System.Drawing.Size(174, 56);
+            this.butSearch.Size = new System.Drawing.Size(224, 56);
             this.butSearch.TabIndex = 4;
             this.butSearch.Text = "Поиск";
             this.butSearch.UseVisualStyleBackColor = true;

@@ -15,6 +15,8 @@ namespace BookCataloger
 {
     public partial class DisplayForm : Form
     {
+        public static short _id = 0;
+
         public DisplayForm()
         {
             InitializeComponent();
@@ -54,7 +56,7 @@ namespace BookCataloger
 
         private void button1_Click(object sender, EventArgs e)
         {
-            short _id = Convert.ToInt16(textBox1.Text);
+            _id = Convert.ToInt16(textBox1.Text);
             Greeting.ListOfBooks.RemoveAt(_id);
             using(StreamWriter sw = new StreamWriter("Books.txt"))
             {
@@ -67,6 +69,16 @@ namespace BookCataloger
             Hide();
             Greeting greeting = new Greeting();
             greeting.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            _id = Convert.ToInt16(textBox1.Text);
+            Hide();
+            EditingForm editing = new EditingForm();
+            editing.Show();
+
+
         }
     }
 }

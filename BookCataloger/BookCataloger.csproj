@@ -58,6 +58,12 @@
     <Compile Include="DisplayForm.Designer.cs">
       <DependentUpon>DisplayForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditingForm.Designer.cs">
+      <DependentUpon>EditingForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Book.cs" />
     <Compile Include="WelcomeForm.cs">
       <SubType>Form</SubType>
@@ -72,6 +78,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DisplayForm.resx">
       <DependentUpon>DisplayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditingForm.resx">
+      <DependentUpon>EditingForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WelcomeForm.resx">
       <DependentUpon>WelcomeForm.cs</DependentUpon>

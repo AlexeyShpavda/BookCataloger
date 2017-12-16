@@ -8,24 +8,40 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-using BookCataloger.Breakers;
-using BookCataloger.Model;
 
 namespace BookCataloger
 {
-    public partial class AdditionForm : Form
+    public partial class EditingForm : Form
     {
-        public AdditionForm()
+        public EditingForm()
         {
             InitializeComponent();
         }
 
-        private void butAdd_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Greeting greeting = new Greeting();
+            greeting.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
             if (textBox1.Text != string.Empty && textBox2.Text != string.Empty && textBox3.Text != string.Empty &&
                 textBox4.Text != string.Empty && textBox5.Text != string.Empty && comboBox1.Text != string.Empty)
             {
-                Greeting.ListOfBooks.Add(new Book(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, comboBox1.Text));
+                Greeting.ListOfBooks[DisplayForm._id].Author = textBox1.Text;
+                Greeting.ListOfBooks[DisplayForm._id].Name = textBox2.Text;
+                Greeting.ListOfBooks[DisplayForm._id].Year = textBox3.Text;
+                Greeting.ListOfBooks[DisplayForm._id].PublishingHouse = textBox4.Text;
+                Greeting.ListOfBooks[DisplayForm._id].Annotation = textBox5.Text;
+                Greeting.ListOfBooks[DisplayForm._id].Category = comboBox1.Text;
+
                 using (StreamWriter sw = new StreamWriter("Books.txt"))
                 {
                     foreach (var item in Greeting.ListOfBooks)
@@ -58,16 +74,14 @@ namespace BookCataloger
             }
         }
 
-        private void butBack_Click(object sender, EventArgs e)
+        private void EditingForm_Load(object sender, EventArgs e)
         {
-            Hide();
-            Greeting greeting = new Greeting();
-            greeting.Show();
-        }
-
-        private void butExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
+            textBox1.Text = Greeting.ListOfBooks[DisplayForm._id].Author;
+            textBox2.Text = Greeting.ListOfBooks[DisplayForm._id].Name;
+            textBox3.Text = Greeting.ListOfBooks[DisplayForm._id].Year;
+            textBox4.Text = Greeting.ListOfBooks[DisplayForm._id].PublishingHouse;
+            textBox5.Text = Greeting.ListOfBooks[DisplayForm._id].Annotation;
+            comboBox1.Text = Greeting.ListOfBooks[DisplayForm._id].Category;
         }
     }
 }

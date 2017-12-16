@@ -34,7 +34,7 @@ namespace BookCataloger
 
         private void DisplayForm_Load(object sender, EventArgs e)
         {
-            textBox1.Text = "Введите ID книги для удаления";
+            textBox1.Text = "0";
             short i = 0;
             ListViewItem list;
             listView1.Items.Clear();
@@ -52,9 +52,21 @@ namespace BookCataloger
             }
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            short _id = Convert.ToInt16(textBox1.Text);
+            Greeting.ListOfBooks.RemoveAt(_id);
+            using(StreamWriter sw = new StreamWriter("Books.txt"))
+            {
+                foreach (var item in Greeting.ListOfBooks)
+                {
+                    sw.WriteLine(item.ToString());
+                }
+            }
+            MessageBox.Show("Удалено!", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Hide();
+            Greeting greeting = new Greeting();
+            greeting.Show();
         }
     }
 }

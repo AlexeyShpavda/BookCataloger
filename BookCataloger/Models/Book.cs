@@ -32,5 +32,10 @@ namespace BookCataloger.Model
             Category = category;
         }
 
+        public override string ToString()
+        {
+            return String.Format(Author + "|" + Name + "|" + Year + "|" + PublishingHouse + "|" + Annotation + "|" + Category);
+        }
+
     }
 }

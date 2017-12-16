@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using BookCataloger.Breakers;
+using BookCataloger.Model;
 
 namespace BookCataloger
 {
@@ -23,8 +25,16 @@ namespace BookCataloger
             if (textBox1.Text != string.Empty && textBox2.Text != string.Empty && textBox3.Text != string.Empty &&
                 textBox4.Text != string.Empty && textBox5.Text != string.Empty && comboBox1.Text != string.Empty)
             {
-                File.AppendAllText("Books.txt", textBox1.Text + "|" + textBox2.Text + "|" + textBox3.Text + "|" + textBox4.Text
-                    + "|" + textBox5.Text + "|" + comboBox1.Text + "\r\n");
+                //File.AppendAllText("Books.txt", textBox1.Text + "|" + textBox2.Text + "|" + textBox3.Text + "|" + textBox4.Text
+                //    + "|" + textBox5.Text + "|" + comboBox1.Text + "\r\n");
+                Greeting.ListOfBooks.Add(new Book(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, comboBox1.Text));
+                using (StreamWriter sw = new StreamWriter("Books.txt"))
+                {
+                    foreach (var item in Greeting.ListOfBooks)
+                    {
+                        sw.WriteLine(item.ToString());
+                    }
+                }
                 MessageBox.Show("Сохранение!", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Hide();
                 Greeting greeting = new Greeting();

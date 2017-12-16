@@ -35,11 +35,12 @@
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.butExit = new System.Windows.Forms.Button();
             this.butBack = new System.Windows.Forms.Button();
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // listView1
@@ -60,7 +61,6 @@
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -91,9 +91,14 @@
             this.columnHeader6.Text = "Аннотации";
             this.columnHeader6.Width = 64;
             // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Категория";
+            this.columnHeader7.Width = 70;
+            // 
             // butExit
             // 
-            this.butExit.Location = new System.Drawing.Point(403, 365);
+            this.butExit.Location = new System.Drawing.Point(403, 371);
             this.butExit.Name = "butExit";
             this.butExit.Size = new System.Drawing.Size(85, 25);
             this.butExit.TabIndex = 1;
@@ -103,7 +108,7 @@
             // 
             // butBack
             // 
-            this.butBack.Location = new System.Drawing.Point(313, 365);
+            this.butBack.Location = new System.Drawing.Point(313, 371);
             this.butBack.Name = "butBack";
             this.butBack.Size = new System.Drawing.Size(84, 25);
             this.butBack.TabIndex = 2;
@@ -111,33 +116,39 @@
             this.butBack.UseVisualStyleBackColor = true;
             this.butBack.Click += new System.EventHandler(this.butBack_Click);
             // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "Категория";
-            this.columnHeader7.Width = 70;
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(223, 365);
+            this.button1.Location = new System.Drawing.Point(223, 371);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(84, 25);
             this.button1.TabIndex = 3;
             this.button1.Text = "Удалить";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 368);
+            this.textBox1.Location = new System.Drawing.Point(12, 374);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(205, 20);
             this.textBox1.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 358);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(169, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Введите ID книги для удаления:";
             // 
             // DisplayForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(500, 400);
+            this.ClientSize = new System.Drawing.Size(500, 408);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.butBack);
@@ -167,5 +178,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

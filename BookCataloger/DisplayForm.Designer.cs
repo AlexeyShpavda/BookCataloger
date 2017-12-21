@@ -56,9 +56,10 @@
             this.columnHeader6,
             this.columnHeader7});
             this.listView1.GridLines = true;
-            this.listView1.Location = new System.Drawing.Point(12, 12);
+            this.listView1.Location = new System.Drawing.Point(16, 15);
+            this.listView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(476, 343);
+            this.listView1.Size = new System.Drawing.Size(633, 421);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -66,7 +67,7 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "id";
-            this.columnHeader1.Width = 22;
+            this.columnHeader1.Width = 49;
             // 
             // columnHeader2
             // 
@@ -85,25 +86,26 @@
             // columnHeader5
             // 
             this.columnHeader5.Text = "Издательство";
-            this.columnHeader5.Width = 73;
+            this.columnHeader5.Width = 116;
             // 
             // columnHeader6
             // 
             this.columnHeader6.Text = "Аннотации";
-            this.columnHeader6.Width = 64;
+            this.columnHeader6.Width = 100;
             // 
             // columnHeader7
             // 
             this.columnHeader7.Text = "Категория";
-            this.columnHeader7.Width = 70;
+            this.columnHeader7.Width = 120;
             // 
             // butExit
             // 
             this.butExit.BackColor = System.Drawing.Color.Black;
             this.butExit.ForeColor = System.Drawing.Color.DarkGray;
-            this.butExit.Location = new System.Drawing.Point(375, 387);
+            this.butExit.Location = new System.Drawing.Point(500, 476);
+            this.butExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.butExit.Name = "butExit";
-            this.butExit.Size = new System.Drawing.Size(113, 25);
+            this.butExit.Size = new System.Drawing.Size(151, 31);
             this.butExit.TabIndex = 1;
             this.butExit.Text = "Выход";
             this.butExit.UseVisualStyleBackColor = false;
@@ -113,9 +115,10 @@
             // 
             this.butBack.BackColor = System.Drawing.Color.Black;
             this.butBack.ForeColor = System.Drawing.Color.DarkGray;
-            this.butBack.Location = new System.Drawing.Point(375, 361);
+            this.butBack.Location = new System.Drawing.Point(500, 444);
+            this.butBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.butBack.Name = "butBack";
-            this.butBack.Size = new System.Drawing.Size(112, 25);
+            this.butBack.Size = new System.Drawing.Size(149, 31);
             this.butBack.TabIndex = 2;
             this.butBack.Text = "Вернуться";
             this.butBack.UseVisualStyleBackColor = false;
@@ -125,9 +128,10 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.ForeColor = System.Drawing.Color.DarkGray;
-            this.button1.Location = new System.Drawing.Point(265, 389);
+            this.button1.Location = new System.Drawing.Point(353, 479);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 23);
+            this.button1.Size = new System.Drawing.Size(139, 28);
             this.button1.TabIndex = 3;
             this.button1.Text = "Удалить";
             this.button1.UseVisualStyleBackColor = false;
@@ -135,18 +139,20 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 374);
+            this.textBox1.Location = new System.Drawing.Point(16, 460);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(205, 20);
+            this.textBox1.Size = new System.Drawing.Size(272, 22);
             this.textBox1.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(9, 358);
+            this.label1.Location = new System.Drawing.Point(12, 441);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(244, 13);
+            this.label1.Size = new System.Drawing.Size(320, 17);
             this.label1.TabIndex = 5;
             this.label1.Text = "Введите ID для удаления или редактирования:";
             // 
@@ -154,9 +160,10 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Black;
             this.button2.ForeColor = System.Drawing.Color.DarkGray;
-            this.button2.Location = new System.Drawing.Point(265, 361);
+            this.button2.Location = new System.Drawing.Point(353, 444);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 25);
+            this.button2.Size = new System.Drawing.Size(139, 31);
             this.button2.TabIndex = 6;
             this.button2.Text = "Редактировать";
             this.button2.UseVisualStyleBackColor = false;
@@ -164,10 +171,10 @@
             // 
             // DisplayForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(500, 424);
+            this.ClientSize = new System.Drawing.Size(667, 522);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
@@ -176,6 +183,7 @@
             this.Controls.Add(this.butExit);
             this.Controls.Add(this.listView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DisplayForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DisplayForm";

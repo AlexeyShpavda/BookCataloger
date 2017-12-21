@@ -33,11 +33,13 @@ namespace BookCataloger
         {
             ListViewItem list;
             listView1.Items.Clear();
+            bool flag = false;
             foreach (var item in Greeting.ListOfBooks)
             {
                 if (item.Annotation == textBox1.Text || item.Author == textBox1.Text || item.Category == textBox1.Text ||
                     item.Name == textBox1.Text || item.Year == textBox1.Text || item.PublishingHouse == textBox1.Text)
                 {
+                    flag = true;
                     list = new ListViewItem(item.Author);
                     list.SubItems.Add(item.Name);
                     list.SubItems.Add(item.Year);
@@ -46,6 +48,11 @@ namespace BookCataloger
                     list.SubItems.Add(item.Category);
                     listView1.Items.Add(list);
                 }
+            }
+            if (flag)
+            {
+                FormWithPicture formWithPicture = new FormWithPicture();
+                formWithPicture.Show();
             }
         }
     }

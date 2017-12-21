@@ -64,6 +64,12 @@
     <Compile Include="EditingForm.Designer.cs">
       <DependentUpon>EditingForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormWithPicture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWithPicture.Designer.cs">
+      <DependentUpon>FormWithPicture.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\IReadFiles.cs" />
     <Compile Include="Interfaces\IWriteToFiles.cs" />
     <Compile Include="Models\Book.cs" />
@@ -91,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditingForm.resx">
       <DependentUpon>EditingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWithPicture.resx">
+      <DependentUpon>FormWithPicture.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SearchForm.resx">
       <DependentUpon>SearchForm.cs</DependentUpon>
